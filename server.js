@@ -15,7 +15,7 @@ if (fs.existsSync(dataFilePath)) {
 }
 
 // Middleware to serve static files (HTML, CSS, JS)
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../')));
 
 // API endpoint to get the visit count
 app.get('/getVisitCount', (req, res) => {
