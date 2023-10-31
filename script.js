@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then((response) => response.json())
         .then((data) => {
           document.body.style.fontSize = data.visitCount  + "px"
-          visitCountElement.textContent = data.visitCount;
         })
         .catch((error) => {
           console.error('Error fetching visit count:', error);

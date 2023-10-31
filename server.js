@@ -14,8 +14,8 @@ if (fs.existsSync(dataFilePath)) {
   visitCount = JSON.parse(data).visitCount || 0;
 }
 
-// Middleware to serve static files (HTML, CSS, JS)
-app.use(express.static(path.join(__dirname, '../')));
+// Middleware to serve static files (HTML, CSS, JS) from the root directory
+app.use(express.static(__dirname));
 
 // API endpoint to get the visit count
 app.get('/getVisitCount', (req, res) => {
