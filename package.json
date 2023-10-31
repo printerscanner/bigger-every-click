@@ -1,0 +1,13 @@
+{
+    "name": "bigger-every-click",
+    "description": "Click the button and the text gets bigger. Don't click it and the text stays the same. Someday this website will be unreadable.",
+    "version": "1.0.0",
+    "scripts": {
+      "serve": "node server.js"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }

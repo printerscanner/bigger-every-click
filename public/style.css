@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url("fonts/PPNeueMontreal-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url("fonts/PPNeueMontreal-Bold.woff") format("woff");
+	font-weight: 700;
+}
+
+
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url("fonts/PPNeueMontreal-Italic.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+}
+/**/
+
+body {
+	background-color: inherit;
+	font-family: 'Neue Montreal', sans-serif;
+	background-color: grey;
+	color: #131313;
+}
+
+#increment-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid gray;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#increment-button:hover {
+    background-color: #FFA726; /* Change the color to your liking */
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+#increment-button:active {
+    background-color: #FF7043; /* Change the color to your liking */
+    transform: scale(0.9);
+    box-shadow: none;
+}
